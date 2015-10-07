@@ -17,8 +17,8 @@ d3Scatterplot <- function(config) {
   htmlwidgets::createWidget(
     name = 'd3Scatterplot',
     p,
-    width = config.width,
-    height = config.height,
+    width = 700,
+    height = 700,
     package = 'd3Scatterplot'
   )
 }
@@ -39,15 +39,16 @@ renderD3Scatterplot <- function(expr, env = parent.frame(), quoted = FALSE) {
 }
 
 #DATA
-x <- c(1,2,3,4)
-y <- c(5,6,7,8)
+x <- c(11, 25, 37, 48, 90, 44, 67, 78, 23)
+y <- c(12, 78, 99, 38, 24, 77, 34, 89, 13)
 columns <- data.frame(x,y)
+
 #CONFIG OBJECT
 
 config <- list(
-			columns = columns,
+			data = columns,
 			margin = list(top = 40, bottom =140, left=80, right=20),
-			width = 700,
+			width = 900,
 			height = 500
 )
 
