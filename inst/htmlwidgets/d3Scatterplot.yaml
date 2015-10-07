@@ -1,0 +1,12 @@
+ dependencies:
+  - 
+	name: d3
+    version: 3.5.6
+    src:htmlwidgets/
+    script:d3.min.js
+  -
+	name: D3Scatter-plot
+	version : 0.0.9
+	src: htmlwidgets/
+	script: d3Chart.js
+	stylesheet : d3Chart.min.css

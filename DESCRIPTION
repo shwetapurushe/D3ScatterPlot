@@ -1,0 +1,9 @@
+Package: d3Scatterplot
+Title: A simple two dimensional d3 scatterplot
+Version: 0.0.0.9000
+Authors@R: person("Shweta", "Purushe", email = "shwetapurushe@gmail.com", role = c("aut", "cre"))
+Description: This is a simple two dimensional d3 scatterplot used for plotting data.
+Depends: R (>= 3.1.2)
+Imports: htmlwidgets
+License: MIT
+LazyData: true
