@@ -8,6 +8,7 @@
 d3Scatterplot <- function(config) {
 
   # forward options using p
+  #parameters sent to the widget, in this case only one object
   p = list(
     config = config
   )
@@ -40,10 +41,11 @@ renderD3Scatterplot <- function(expr, env = parent.frame(), quoted = FALSE) {
 #DATA
 x <- c(1,2,3,4)
 y <- c(5,6,7,8)
+columns <- data.frame(x,y)
+#CONFIG OBJECT
 
-#making config
 config <- list(
-			columns = list(x = x, y = y)
+			columns = columns,
 			margin = list(top = 40, bottom =140, left=80, right=20),
 			width = 700,
 			height = 500

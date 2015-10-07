@@ -6,17 +6,18 @@ HTMLWidgets.widget({
 
   initialize: function(el, width, height) {
 	
-	var chart = new d3Chart.Scatterplot(config);
+	var chart = new d3Chart.Scatterplot();
 	
     return {
      el:el,
 	 width: width,
-	 height: height,
-	 chart:chart
+	 height: height
     }
 
   },
 
+  //p contains the data needed
+  //instance is the obj of d3 scatter plot
   renderValue: function(el, p, instance) {
 	console.log("el", el);
 	console.log("p", p);
