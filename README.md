@@ -15,7 +15,7 @@ library("d3Scatterplot");
 d3Scatterplot(config)
 ```
 
-This will open a d3 scatter plot using data that had been provided in the config object. In R, the config object looks like    
+This will open a d3 scatter plot using data that had been provided in the config object. In R, the config object looks like
 `config <- list(
  			data = data.frame(vector1, vector2),
  			margin = list(top = 40, bottom =140, left=80, right=20),
